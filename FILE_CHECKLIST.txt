@@ -1,0 +1,117 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         DEPLOYMENT FILE CHECKLIST                             ║
+║                  mattschober-cloudpm.com & migratewithmatt.com               ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📦 ESSENTIAL FILES TO UPLOAD (Required):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ index.html
+    • Main website file with all HTML, CSS, and JavaScript
+    • Upload to: public_html/ or web root directory
+    • Size: ~34KB
+
+□ schober-consulting-logo-dark.png
+    • Company logo (displays below your name on the website)
+    • Upload to: Same directory as index.html
+    • Recommended size: 200x200px
+
+□ consulting-logo-dark-compressed.jpg
+    • Favicon (appears in browser tab)
+    • Upload to: Same directory as index.html
+    • Recommended size: 32x32px or 64x64px
+
+□ robots.txt
+    • Allows search engines and AI crawlers
+    • Upload to: Same directory as index.html
+    • Size: ~448 bytes
+
+□ sitemap.xml
+    • XML sitemap for search engines
+    • Upload to: Same directory as index.html
+    • Size: ~1.3KB
+
+□ .htaccess
+    • Server configuration (Apache only)
+    • Upload to: Same directory as index.html
+    • Size: ~1.7KB
+    • Note: Skip if using Nginx server
+
+📂 DIRECTORY STRUCTURE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+public_html/ (or www/ or httpdocs/)
+├── index.html ✓
+├── schober-consulting-logo-dark.png ✓
+├── consulting-logo-dark-compressed.jpg ✓
+├── robots.txt ✓
+├── sitemap.xml ✓
+└── .htaccess ✓
+
+📋 POST-UPLOAD VERIFICATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+After uploading, verify these URLs work:
+
+□ https://mattschober-cloudpm.com/
+    → Should display your website
+
+□ https://migratewithmatt.com/
+    → Should display your website (if pointed to same hosting)
+
+□ https://mattschober-cloudpm.com/robots.txt
+    → Should show robots.txt content
+
+□ https://mattschober-cloudpm.com/sitemap.xml
+    → Should show XML sitemap
+
+□ Browser tab shows favicon
+    → Small logo should appear in browser tab
+
+□ Logo displays on homepage
+    → Schober Consulting logo should appear below "Matt Schober"
+
+✅ WHAT'S INCLUDED IN YOUR WEBSITE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EXPERIENCE SECTION NOW INCLUDES:
+✓ Cloud Infrastructure Projects - Slalom (Fortune Ranked #17)
+✓ Technology Consulting - Deloitte (Fortune Ranked #13)
+
+SEO & OPTIMIZATION:
+✓ Comprehensive meta tags
+✓ Schema.org structured data (3 types)
+✓ AI crawler optimization
+✓ Geographic targeting (Minnesota)
+✓ Mobile responsive design
+✓ Fast loading optimized code
+
+BRANDING:
+✓ Company logo (schober-consulting-logo-dark.png)
+✓ Favicon (consulting-logo-dark-compressed.jpg)
+✓ Logo in all social media sharing tags
+
+🎯 QUICK UPLOAD METHODS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FTP/SFTP:
+  1. Connect to your hosting
+  2. Navigate to public_html
+  3. Upload all 6 files
+  4. Done!
+
+cPanel:
+  1. Log into cPanel
+  2. Open File Manager
+  3. Go to public_html
+  4. Upload all 6 files
+  5. Done!
+
+📧 SUPPORT:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Questions? Contact: DR@migratewithmatt.com
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         © 2025 Schober Consulting LLC                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝

@@ -1,0 +1,106 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                            LOGO PLACEMENT GUIDE                               ║
+║                     Matt Schober Cloud Project Management                     ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📍 LOGO LOCATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Your logo will appear centered on the page, directly below "Matt Schober" and 
+above "Cloud Project Management Expert"
+
+Layout order:
+1. Matt Schober (name)
+2. 🖼️  YOUR LOGO HERE
+3. Cloud Project Management Expert (tagline)
+
+🎨 LOGO FILES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MAIN LOGO:        schober-consulting-logo-dark.png
+                  (Displays on the page below your name)
+
+FAVICON:          consulting-logo-dark-compressed.jpg
+                  (Appears in browser tabs and bookmarks)
+
+RECOMMENDED SIZE: 200px x 200px (or proportional) for main logo
+                  32px x 32px or 64px x 64px for favicon
+
+📂 WHERE TO UPLOAD YOUR LOGOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Upload both logo files to the SAME directory as index.html:
+
+  public_html/
+  ├── index.html
+  ├── schober-consulting-logo-dark.png  ← MAIN LOGO
+  ├── consulting-logo-dark-compressed.jpg  ← FAVICON
+  ├── robots.txt
+  ├── sitemap.xml
+  └── .htaccess
+
+✅ QUICK STEPS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Upload schober-consulting-logo-dark.png (main logo)
+2. Upload consulting-logo-dark-compressed.jpg (favicon)
+3. Both files go in the same folder as index.html
+4. Visit your website - logos should appear automatically!
+
+🎯 LOGO DESIGN TIPS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Use colors that complement the blue/orange gradient theme
+✓ Ensure good contrast against dark blue background (#0a0e27 to #1a1f3a)
+✓ Keep design clean and professional
+✓ Test on mobile devices to ensure it looks good at 150px width
+✓ Transparent background (PNG/SVG) works best for main logo
+
+📱 RESPONSIVE BEHAVIOR:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Desktop/Tablet:  200px maximum width
+Mobile Phones:   150px maximum width
+Always centered, maintains aspect ratio
+
+🔍 SEO BENEFITS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Your logo is automatically included in:
+✓ Open Graph tags (Facebook, LinkedIn sharing)
+✓ Twitter Card metadata
+✓ Schema.org structured data
+✓ Proper alt text for accessibility
+✓ Browser favicon/tab icon
+
+This helps with brand recognition when your site is shared on social media!
+
+🆘 TROUBLESHOOTING:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem: Logo not showing
+Solution: 
+  - Verify files are uploaded to the correct directory
+  - Check filename spelling (case-sensitive on Linux servers)
+  - Clear browser cache (Ctrl+F5 or Cmd+Shift+R)
+  - Verify file permissions (should be 644)
+
+Problem: Favicon not updating
+Solution:
+  - Clear browser cache completely
+  - Try a hard refresh (Ctrl+Shift+F5)
+  - Wait 5-10 minutes for browser to update
+  - Close and reopen browser
+
+Problem: Logo too large or too small
+Solution:
+  - Resize your image file to recommended 200x200px
+  - Or edit index.html and change "max-width: 200px" in .hero-logo
+
+📧 NEED HELP?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Contact: DR@migratewithmatt.com
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         © 2025 Schober Consulting LLC                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝

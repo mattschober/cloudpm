@@ -1,0 +1,107 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                     WEBSITE DEPLOYMENT QUICK START GUIDE                      ║
+║                  mattschober-cloudpm.com & migratewithmatt.com               ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📦 FILES TO UPLOAD:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ index.html          - Main website (HTML, CSS, JavaScript all in one)
+✓ robots.txt          - Allows AI crawlers and search engines
+✓ sitemap.xml         - Search engine sitemap
+✓ .htaccess           - Server configuration (Apache servers only)
+
+📁 UPLOAD LOCATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Upload all files to your web root directory:
+  • public_html/  (most common)
+  • www/
+  • httpdocs/
+  • or the root folder specified by your hosting provider
+
+⚡ QUICK DEPLOYMENT METHODS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+METHOD 1: FTP/SFTP (FileZilla, Cyberduck, etc.)
+  1. Connect to your hosting via FTP
+  2. Navigate to public_html or web root
+  3. Drag and drop all 4 files
+  4. Done!
+
+METHOD 2: cPanel File Manager
+  1. Log into cPanel
+  2. Open "File Manager"
+  3. Go to public_html
+  4. Click "Upload"
+  5. Select all 4 files
+  6. Upload complete!
+
+METHOD 3: Command Line (SSH)
+  1. SSH into your server
+  2. cd /path/to/public_html
+  3. Upload files via scp or wget
+  4. Set permissions: chmod 644 *.html *.txt *.xml
+  5. Done!
+
+🔍 POST-DEPLOYMENT CHECKLIST:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+□ Visit https://mattschober-cloudpm.com - Site loads?
+□ Visit https://migratewithmatt.com - Site loads?
+□ Test "Coming Soon" button - Goes to healaguard.com?
+□ Test "Connect on LinkedIn" button - Opens LinkedIn messaging?
+□ Test email link - Opens mail client with DR@migratewithmatt.com?
+□ Check mobile view - Looks good?
+□ Verify HTTPS is working - Green lock icon in browser?
+
+🚀 SUBMIT TO SEARCH ENGINES (IMPORTANT FOR SEO):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GOOGLE:
+  1. Go to: https://search.google.com/search-console
+  2. Add property: mattschober-cloudpm.com
+  3. Verify ownership (DNS or HTML file method)
+  4. Submit sitemap: https://mattschober-cloudpm.com/sitemap.xml
+  5. Repeat for migratewithmatt.com
+
+BING:
+  1. Go to: https://www.bing.com/webmasters
+  2. Add site: mattschober-cloudpm.com
+  3. Verify ownership
+  4. Submit sitemap: https://mattschober-cloudpm.com/sitemap.xml
+  5. Repeat for migratewithmatt.com
+
+📊 VERIFY SEO SETUP:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Sitemap accessible: https://mattschober-cloudpm.com/sitemap.xml
+✓ Robots.txt accessible: https://mattschober-cloudpm.com/robots.txt
+✓ Test structured data: https://search.google.com/test/rich-results
+✓ Test mobile-friendly: https://search.google.com/test/mobile-friendly
+
+💡 IMPORTANT NOTES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• SSL certificate should be installed on both domains (HTTPS)
+• .htaccess file forces HTTPS redirect automatically
+• Both domains should point to the same files (use domain aliasing)
+• The website is optimized for AI discovery (ChatGPT, Claude, etc.)
+• All structured data is embedded in the HTML file
+
+🔧 TROUBLESHOOTING:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Problem: .htaccess not working
+Solution: Make sure your server runs Apache. Nginx needs nginx.conf instead.
+
+Problem: Site not redirecting to HTTPS
+Solution: Check SSL certificate is installed. Some hosts need SSL forced in cPanel.
+
+Problem: Sitemap showing 404
+Solution: Make sure sitemap.xml is in the root directory, not a subfolder.
+
+Problem: Links not working
+Solution: Clear browser cache and try again. Check all files uploaded correctly.
+
+📧 SUPPORT:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Questions? Contact: DR@migratewithmatt.com
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         © 2025 Schober Consulting LLC                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝

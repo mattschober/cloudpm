@@ -1,0 +1,32 @@
+# robots.txt for mattschober-cloudpm.com
+User-agent: *
+Allow: /
+Sitemap: https://mattschober-cloudpm.com/sitemap.xml
+
+# Allow all AI crawlers and search engines
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
