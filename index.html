@@ -1280,7 +1280,7 @@
         <div class="section-content">
             <h1>Matt Schober</h1>
             <div class="hero-logo">
-                <video id="heroVideo" playsinline>
+                <video id="heroVideo" playsinline muted autoplay controls>
                     <source src="hero-video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1490,9 +1490,9 @@
             <h2>Let's Connect</h2>
             <p>Ready to discuss your cloud project? I'm available for consulting engagements,<br>project management roles, and strategic advisory services.</p>
             <div class="contact-methods">
-                <a href="mailto:DR@migratewithmatt.com" class="contact-card">
+                <a href="/cdn-cgi/l/email-protection#622630220f0b0510031607150b160a0f0316164c010d0f" class="contact-card">
                     <h3>📧 Email</h3>
-                    <p>DR@migratewithmatt.com</p>
+                    <p><span class="__cf_email__" data-cfemail="f6b2a4b69b9f9184978293819f829e9b978282d895999b">[email&#160;protected]</span></p>
                 </a>
                 <a href="https://linkedin.com/in/mattschober" target="_blank" rel="noopener noreferrer" class="contact-card">
                     <h3>💼 LinkedIn</h3>
@@ -1535,28 +1535,10 @@
     </footer>
 
     <!-- HubSpot Form Script -->
-    <script src="https://js-na2.hsforms.net/forms/embed/244055979.js" defer></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://js-na2.hsforms.net/forms/embed/244055979.js" defer></script>
 
     <script>
-        // Hero video autoplay with delay and freeze on end
-        window.addEventListener('DOMContentLoaded', function() {
-            const heroVideo = document.getElementById('heroVideo');
-            
-            if (heroVideo) {
-                // Start video after 1 second delay
-                setTimeout(function() {
-                    heroVideo.play().catch(function(error) {
-                        console.log('Video autoplay failed:', error);
-                    });
-                }, 1000);
-                
-                // When video ends, jump to 4 seconds and pause
-                heroVideo.addEventListener('ended', function() {
-                    heroVideo.currentTime = 4;
-                    heroVideo.pause();
-                });
-            }
-        });
+        // Video will autoplay and freeze at end naturally due to HTML attributes
 
         // Modal functionality
         const modal = document.getElementById('inquiryModal');
@@ -1585,12 +1567,4 @@
         }
 
         // Close modal with Escape key
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape' && modal.style.display === 'block') {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        });
-    </script>
-</body>
-</html>
+        document.addEventListener('keydown', fun
