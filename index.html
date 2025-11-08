@@ -618,6 +618,66 @@
             margin-bottom: 2rem;
         }
 
+        /* Value Section - Horizontal Cards */
+        .value-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            padding: 2rem;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .value-card:hover {
+            transform: translateX(10px);
+            border-color: rgba(249, 115, 22, 0.5);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+        }
+
+        .value-card h3 {
+            font-size: 1.5rem;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+            min-width: 280px;
+        }
+
+        .value-card p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            line-height: 1.8;
+            flex: 1;
+            text-align: left;
+        }
+
+        .value-card-content {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .value-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .value-card h3 {
+                min-width: auto;
+            }
+
+            .value-card:hover {
+                transform: translateY(-5px);
+            }
+        }
+
         /* Services Section */
         .services h2 {
             font-size: 3.5rem;
@@ -1267,7 +1327,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#value">Value</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -1280,7 +1340,7 @@
         <div class="section-content">
             <h1>Matt Schober</h1>
             <div class="hero-logo">
-                <video id="heroVideo" playsinline muted autoplay controls>
+                <video id="heroVideo" playsinline controls>
                     <source src="hero-video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1296,24 +1356,24 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="section-content">
-            <h2>About Me</h2>
-            <p class="about-intro">I'm a cloud project management professional specializing in enterprise-scale cloud migrations and infrastructure modernization. With extensive experience across AWS and Azure, I help organizations navigate the complexities of cloud adoption while ensuring projects stay on time, on budget, and aligned with business objectives.</p>
+            <h2>Delivering Enterprise Cloud Transformations Without the Enterprise Risk</h2>
+            <p class="about-intro">As VP of Infrastructure or CIO, your cloud initiative isn't just a technology project—it's a board-level commitment with your reputation on the line. I specialize in de-risking enterprise cloud migrations by bringing Fortune 500-caliber execution to your transformation, whether you're moving 50 or 500 applications. My approach combines hands-on AWS and Azure expertise with PMI-certified project rigor, ensuring your migration delivers promised ROI without the cost overruns, timeline slippage, or security incidents that derail careers.</p>
             <div class="about-content">
                 <div class="about-card">
-                    <h3>🎯 Strategic Leadership</h3>
-                    <p>Driving cloud strategy from vision to execution, aligning technical solutions with business goals and stakeholder expectations.</p>
+                    <h3>🎯 Risk Mitigation First</h3>
+                    <p>Your board expects zero downtime and seamless transitions. I architect migration strategies that eliminate single points of failure, validate disaster recovery before you need it, and maintain business continuity throughout the transformation—because "we'll figure it out" isn't acceptable at enterprise scale.</p>
                 </div>
                 <div class="about-card">
-                    <h3>☁️ Multi-Cloud Expertise</h3>
-                    <p>Deep hands-on experience with AWS and Azure, enabling optimal platform selection and hybrid cloud strategies.</p>
+                    <h3>☁️ Multi-Cloud Without the Chaos</h3>
+                    <p>Avoid vendor lock-in and maintain negotiating leverage. I design AWS and Azure architectures that give you optionality without operational complexity—proven strategies from financial services and healthcare organizations that have already solved these problems.</p>
                 </div>
                 <div class="about-card">
-                    <h3>📊 Results-Driven</h3>
-                    <p>Proven track record of delivering complex cloud projects on time and within budget, with measurable business impact.</p>
+                    <h3>📊 Quantifiable Business Outcomes</h3>
+                    <p>Every migration I lead includes defined success metrics tied to your business case: infrastructure cost reductions of 30-60%, measurable improvements in application performance, and documented compliance frameworks your auditors will approve. You get the data you need to report upward with confidence.</p>
                 </div>
                 <div class="about-card">
-                    <h3>🏆 Certified Expertise</h3>
-                    <p>AWS and Azure certified professional with Project Management Institute certification, bringing validated technical and project management expertise to every engagement.</p>
+                    <h3>🏆 Enterprise Governance Built-In</h3>
+                    <p>HIPAA, SOC 2, PCI-DSS—your compliance requirements don't pause during migration. I embed security controls, access governance, and audit trails from day one, ensuring your risk and compliance teams stay satisfied while you move fast.</p>
                 </div>
             </div>
         </div>
@@ -1322,97 +1382,76 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="section-content">
-            <h2>Services</h2>
+            <h2>Services That Protect Your Investment and Your Reputation</h2>
             <div class="services-grid">
                 <article class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon">🚀</div>
-                    <h3 itemprop="name">Cloud Migration Management</h3>
-                    <p itemprop="description">End-to-end project management for cloud migrations, from assessment and planning through execution and optimization.</p>
+                    <h3 itemprop="name">Enterprise Cloud Migration Leadership</h3>
+                    <p itemprop="description">Full accountability for your cloud transformation from business case through hypercare. I own the timeline, the budget, and the risk register—you get predictable execution without surprises. Proven frameworks that have moved billions in enterprise workloads with documented zero-downtime cutovers.</p>
                 </article>
                 <a href="https://healaguard.com" target="_blank" rel="noopener noreferrer" class="service-card service-card-featured" itemscope itemtype="https://schema.org/Service" style="text-decoration: none; color: inherit;">
                     <div class="service-icon">🛡️</div>
-                    <h3 itemprop="name">Disaster Recovery Planning</h3>
-                    <p itemprop="description">Design and implement comprehensive disaster recovery strategies with automated failover, backup solutions, and business continuity planning to protect your critical systems.</p>
+                    <h3 itemprop="name">Disaster Recovery That Actually Works</h3>
+                    <p itemprop="description">Most DR plans fail when tested. I design, implement, and validate disaster recovery architectures that meet your actual RTO/RPO requirements—not theoretical ones. Includes real failover testing, runbook validation, and DRaaS platform options that cost 60-75% less than traditional approaches while delivering faster recovery.</p>
                 </a>
                 <article class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon">🏗️</div>
-                    <h3 itemprop="name">Infrastructure Modernization</h3>
-                    <p itemprop="description">Transform legacy systems into modern, cloud-native architectures with containerization, serverless, and microservices strategies.</p>
+                    <h3 itemprop="name">Legacy Modernization Strategy</h3>
+                    <p itemprop="description">Transform technical debt into competitive advantage. I assess your legacy estate and build phased modernization roadmaps that balance quick wins with long-term architecture goals—containerization, serverless, and microservices strategies that your team can actually operate at scale.</p>
                 </article>
                 <article class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon">🔒</div>
-                    <h3 itemprop="name">Cloud Security & Compliance</h3>
-                    <p itemprop="description">Design and implement security frameworks, ensure regulatory compliance, and establish governance policies for cloud environments.</p>
+                    <h3 itemprop="name">Security & Compliance Frameworks</h3>
+                    <p itemprop="description">Cloud security that satisfies auditors and board members. I implement defense-in-depth architectures with identity governance, network segmentation, encryption at rest and in transit, and continuous compliance monitoring. Your CISO will approve, your auditors will sign off, and your breach insurance won't get voided.</p>
                 </article>
                 <article class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon">💰</div>
-                    <h3 itemprop="name">Cost Optimization</h3>
-                    <p itemprop="description">Analyze cloud spending, identify savings opportunities, and implement FinOps practices to maximize ROI on cloud investments.</p>
+                    <h3 itemprop="name">FinOps & Cost Governance</h3>
+                    <p itemprop="description">Stop cloud cost surprises before they reach your CFO. I implement financial controls, usage governance, and showback/chargeback models that give you predictable cloud spend. Typical clients reduce waste by 30-50% while maintaining or improving performance—savings you can redirect to innovation.</p>
                 </article>
                 <article class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon">👥</div>
-                    <h3 itemprop="name">Team Development</h3>
-                    <p itemprop="description">Build cloud-capable teams through training, mentorship, and establishing best practices for cloud operations.</p>
+                    <h3 itemprop="name">Cloud Center of Excellence Development</h3>
+                    <p itemprop="description">Build internal cloud capability that outlasts any consultant. I establish Cloud Centers of Excellence, define operating models, create training programs, and mentor your engineers—ensuring your organization becomes self-sufficient rather than perpetually dependent on external resources.</p>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <!-- Value Section -->
+    <section id="value" class="experience">
         <div class="section-content">
-            <h2>Experience Highlights</h2>
-            <div class="experience-timeline">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <div class="experience-company">Enterprise Cloud Migrations</div>
-                            <div class="experience-title">Senior Cloud Project Manager</div>
-                        </div>
-                        <div class="experience-period">2020 - Present</div>
-                    </div>
-                    <div class="experience-description">
-                        Led multiple large-scale cloud transformation initiatives across diverse industries, managing cross-functional teams and multi-million dollar budgets.
-                        <ul>
-                            <li>Directed AWS migration for Fortune 500 financial services company, moving 200+ applications with zero downtime</li>
-                            <li>Managed Azure hybrid cloud implementation for healthcare organization, ensuring HIPAA compliance</li>
-                        </ul>
+            <h2>The Value I Deliver</h2>
+            <p class="about-intro" style="text-align: center; max-width: 900px; margin: 0 auto 3rem auto;">Every engagement is designed to deliver measurable business outcomes that protect your infrastructure investment, reduce operational overhead, and position your organization for long-term success.</p>
+            <div class="value-content">
+                <div class="value-card">
+                    <h3>💰 Reduce Operational Replication Costs</h3>
+                    <div class="value-card-content">
+                        <p>Eliminate expensive redundant infrastructure and costly manual disaster recovery processes. My DRaaS solutions deliver 60-75% cost reduction compared to traditional DR approaches while providing superior protection. Real-time replication means you pay only for resources actually used—not maintaining idle standby environments that drain budget year-round.</p>
                     </div>
                 </div>
-                
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <div class="experience-company">Cloud Infrastructure Projects - Slalom (Fortune Ranked #17)</div>
-                            <div class="experience-title">Cloud Solutions Architect & PM</div>
-                        </div>
-                        <div class="experience-period">2017 - 2020</div>
-                    </div>
-                    <div class="experience-description">
-                        Designed and delivered cloud infrastructure solutions while managing project lifecycles from inception to production.
-                        <ul>
-                            <li>Established multi-region disaster recovery architecture across AWS and Azure</li>
-                            <li>Implemented infrastructure-as-code practices reducing deployment time by 75%</li>
-                            <li>Built and mentored cloud engineering teams across multiple client engagements</li>
-                        </ul>
+                <div class="value-card">
+                    <h3>⚡ Simplify Your DR Execution</h3>
+                    <div class="value-card-content">
+                        <p>Complex DR plans don't work under pressure. I design automated failover mechanisms that eliminate 200-page runbooks and reduce your recovery time objective from days to hours. Your team gets push-button disaster recovery with pre-validated playbooks—not hoping everyone remembers the manual steps during a crisis at 3am.</p>
                     </div>
                 </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <div class="experience-company">Technology Consulting - Deloitte (Fortune Ranked #13)</div>
-                            <div class="experience-title">IT Project Manager</div>
-                        </div>
-                        <div class="experience-period">2014 - 2017</div>
+                <div class="value-card">
+                    <h3>🚀 Future-Proof Your Organization</h3>
+                    <div class="value-card-content">
+                        <p>Avoid technology lock-in and maintain strategic flexibility. My multi-cloud architectures give you negotiating leverage with vendors while ensuring your infrastructure can adapt to changing business requirements. When AWS has the next major outage or your CFO demands cost optimization, you have options—not panic.</p>
                     </div>
-                    <div class="experience-description">
-                        Managed diverse technology initiatives including early cloud adoption projects, establishing foundation for cloud specialization.
-                        <ul>
-                            <li>Led initial cloud feasibility assessments and proof-of-concept implementations</li>
-                            <li>Coordinated cross-functional teams across development, operations, and security</li>
-                            <li>Delivered multiple projects utilizing Agile and Waterfall methodologies</li>
-                        </ul>
+                </div>
+                <div class="value-card">
+                    <h3>🛡️ Maintain Client Trust</h3>
+                    <div class="value-card-content">
+                        <p>Your customers expect 99.9%+ availability. Extended outages don't just cost revenue—they destroy reputation and customer confidence built over years. My disaster recovery solutions ensure you can confidently commit to SLAs, maintain customer trust during incidents, and demonstrate business continuity to prospects and partners.</p>
+                    </div>
+                </div>
+                <div class="value-card">
+                    <h3>⚠️ Reduce Your Risk</h3>
+                    <div class="value-card-content">
+                        <p>As VP of Infrastructure or CIO, every outage is a career risk. I implement defense-in-depth strategies with actual tested failover capabilities—not theoretical DR plans that fail when needed. Regular disaster simulations, documented RTO validation, and compliance-ready audit trails mean you can confidently report uptime capabilities to your board and sleep at night.</p>
                     </div>
                 </div>
             </div>
@@ -1422,8 +1461,8 @@
     <!-- Pricing Section -->
     <section id="pricing" class="pricing">
         <div class="section-content">
-            <h2>Pricing Models</h2>
-            <p class="pricing-intro">Flexible engagement options designed to meet your project needs</p>
+            <h2>Transparent, Predictable Engagement Models</h2>
+            <p class="pricing-intro">No hidden fees, no scope creep surprises, no bait-and-switch rates. Choose the model that aligns with your risk tolerance and budget certainty requirements.</p>
             <div class="pricing-table-container">
                 <table class="pricing-table">
                     <thead>
@@ -1538,7 +1577,24 @@
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://js-na2.hsforms.net/forms/embed/244055979.js" defer></script>
 
     <script>
-        // Video will autoplay and freeze at end naturally due to HTML attributes
+        // Hero video - autoplay with audio after 1 second delay
+        window.addEventListener('DOMContentLoaded', function() {
+            const heroVideo = document.getElementById('heroVideo');
+            
+            if (heroVideo) {
+                // Start video with audio after 1 second delay
+                setTimeout(function() {
+                    heroVideo.play().catch(function(error) {
+                        console.log('Video autoplay failed:', error);
+                        // If autoplay with audio fails, try muting and playing
+                        heroVideo.muted = true;
+                        heroVideo.play().catch(function(err) {
+                            console.log('Muted autoplay also failed:', err);
+                        });
+                    });
+                }, 1000);
+            }
+        });
 
         // Modal functionality
         const modal = document.getElementById('inquiryModal');
