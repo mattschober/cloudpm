@@ -866,6 +866,64 @@
             display: inline-block;
         }
 
+        .grey-badge {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 0.25rem;
+            background: rgba(148, 163, 184, 0.1);
+            padding: 0.25rem 0.5rem;
+            border-radius: 12px;
+            display: inline-block;
+        }
+
+        /* Collapsible row styles */
+        .collapsible-row {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .collapsible-row .model-name {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .collapse-arrow {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            font-size: 0.8rem;
+            color: #10b981;
+        }
+
+        .collapse-arrow.expanded {
+            transform: rotate(90deg);
+        }
+
+        .sub-row {
+            display: none;
+        }
+
+        .sub-row.visible {
+            display: table-row;
+        }
+
+        .pricing-preferred-fixed-bid-only {
+            border: 3px solid #10b981;
+            background: rgba(16, 185, 129, 0.05);
+        }
+
+        .pricing-preferred-fixed-bid-only:hover {
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .pricing-preferred-fixed-bid-only .model-name {
+            color: #10b981;
+        }
+
         .pricing-note {
             font-size: 1rem;
             color: #94a3b8;
@@ -1384,6 +1442,26 @@
                     <p>HIPAA, SOC 2, PCI-DSS—your compliance requirements don't pause during migration. I embed security controls, access governance, and audit trails from day one, ensuring your risk and compliance teams stay satisfied while you move fast.</p>
                 </div>
             </div>
+            
+            <!-- Partner Programs Section -->
+            <div style="margin-top: 4rem; padding: 3rem 2rem; background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%); border-radius: 20px; border: 2px solid rgba(59, 130, 246, 0.2);">
+                <h3 style="text-align: center; font-size: 2rem; margin-bottom: 1.5rem; color: #3b82f6;">☁️ Strategic Cloud Partnership Advantage</h3>
+                <p style="text-align: center; font-size: 1.2rem; max-width: 900px; margin: 0 auto 2rem auto; line-height: 1.8;">As an accepted member of both <strong style="color: #10b981;">AWS and Azure Partner Programs</strong>, I bring you direct access to resources covering <strong>more than half of the cloud market!</strong></p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2.5rem;">
+                    <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 15px; padding: 2rem; text-align: center; border: 1px solid rgba(255, 152, 0, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
+                        <h4 style="color: #ff9800; margin-bottom: 1rem; font-size: 1.3rem;">Future-Proofing</h4>
+                        <p style="color: #cbd5e1; line-height: 1.6;">Stay ahead of industry innovation with access to the latest cloud technologies and emerging DR capabilities before they hit the mainstream market.</p>
+                    </div>
+                    
+                    <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 15px; padding: 2rem; text-align: center; border: 1px solid rgba(16, 185, 129, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+                        <h4 style="color: #10b981; margin-bottom: 1rem; font-size: 1.3rem;">Strategic Leverage</h4>
+                        <p style="color: #cbd5e1; line-height: 1.6;">Gain competitive advantage through early access to upcoming DR enhancements, beta features, and direct technical support channels.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1427,45 +1505,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="section-content">
-            <h2>Services That Protect Your Investment and Your Reputation</h2>
-            <div class="services-grid">
-                <article class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-icon">🚀</div>
-                    <h3 itemprop="name">Enterprise Cloud Migration Leadership</h3>
-                    <p itemprop="description">Full accountability for your cloud transformation from business case through hypercare. I own the timeline, the budget, and the risk register—you get predictable execution without surprises. Proven frameworks that have moved billions in enterprise workloads with documented zero-downtime cutovers.</p>
-                </article>
-                <a href="https://healaguard.com" target="_blank" rel="noopener noreferrer" class="service-card service-card-featured" itemscope itemtype="https://schema.org/Service" style="text-decoration: none; color: inherit;">
-                    <div class="service-icon">🛡️</div>
-                    <h3 itemprop="name">Disaster Recovery That Actually Works</h3>
-                    <p itemprop="description">Most DR plans fail when tested. I design, implement, and validate disaster recovery architectures that meet your actual RTO/RPO requirements—not theoretical ones. Includes real failover testing, runbook validation, and DRaaS platform options that cost 60-75% less than traditional approaches while delivering faster recovery.</p>
-                </a>
-                <article class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-icon">🏗️</div>
-                    <h3 itemprop="name">Legacy Modernization Strategy</h3>
-                    <p itemprop="description">Transform technical debt into competitive advantage. I assess your legacy estate and build phased modernization roadmaps that balance quick wins with long-term architecture goals—containerization, serverless, and microservices strategies that your team can actually operate at scale.</p>
-                </article>
-                <article class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-icon">🔒</div>
-                    <h3 itemprop="name">Security & Compliance Frameworks</h3>
-                    <p itemprop="description">Cloud security that satisfies auditors and board members. I implement defense-in-depth architectures with identity governance, network segmentation, encryption at rest and in transit, and continuous compliance monitoring. Your CISO will approve, your auditors will sign off, and your breach insurance won't get voided.</p>
-                </article>
-                <article class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-icon">💰</div>
-                    <h3 itemprop="name">FinOps & Cost Governance</h3>
-                    <p itemprop="description">Stop cloud cost surprises before they reach your CFO. I implement financial controls, usage governance, and showback/chargeback models that give you predictable cloud spend. Typical clients reduce waste by 30-50% while maintaining or improving performance—savings you can redirect to innovation.</p>
-                </article>
-                <article class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-icon">👥</div>
-                    <h3 itemprop="name">Cloud Center of Excellence Development</h3>
-                    <p itemprop="description">Build internal cloud capability that outlasts any consultant. I establish Cloud Centers of Excellence, define operating models, create training programs, and mentor your engineers—ensuring your organization becomes self-sufficient rather than perpetually dependent on external resources.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
     <!-- Pricing Section -->
     <section id="pricing" class="pricing">
         <div class="section-content">
@@ -1482,43 +1521,51 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="pricing-preferred">
+                        <tr class="pricing-preferred-fixed-bid-only collapsible-row" id="fixedBidRow">
                             <td class="model-name">
-                                Fixed Bid
-                                <span class="preferred-badge">Client Preferred</span>
+                                <span class="collapse-arrow">▶</span>
+                                <div>
+                                    Fixed Bid
+                                    <span class="preferred-badge">Client Preferred</span>
+                                </div>
                             </td>
                             <td class="duration-cell">&lt;8 months</td>
                             <td>Well-defined projects, migrations, implementations with clear scope</td>
                             <td>Single agreed-upon price for the entire project. Perfect for migrations, infrastructure deployments, and disaster recovery implementations with clearly defined deliverables. Includes detailed project plan, milestones, and success criteria upfront.</td>
                         </tr>
-                        <tr style="background: rgba(16, 185, 129, 0.03);">
+                        <tr class="sub-row" data-parent="fixedBidRow">
                             <td style="padding-left: 3rem; font-style: italic; color: #94a3b8;">Assessment</td>
                             <td class="duration-cell">2-4 weeks</td>
                             <td>Initial evaluation and planning phase</td>
                             <td>Comprehensive evaluation of your current environment and cloud readiness. Detailed assessment report with recommendations. Cost can be applied to follow-on work.</td>
                         </tr>
-                        <tr style="background: rgba(16, 185, 129, 0.03);">
+                        <tr class="sub-row" data-parent="fixedBidRow">
                             <td style="padding-left: 3rem; font-style: italic; color: #94a3b8;">Architecture and Execution Hand Off</td>
                             <td class="duration-cell">3 - 6 months</td>
                             <td>Design and optimization guidance</td>
                             <td>Expert guidance on how to refresh and optimize what you have in place today. Includes the discovery portion, best practices, modernization strategies, and detailed architecture documentation.</td>
                         </tr>
-                        <tr style="background: rgba(16, 185, 129, 0.03);">
+                        <tr class="sub-row" data-parent="fixedBidRow">
                             <td style="padding-left: 3rem; font-style: italic; color: #94a3b8;">Full Services</td>
                             <td class="duration-cell">6-8 months</td>
                             <td>Complete end-to-end implementation</td>
                             <td>Comprehensive implementation including migration execution, disaster recovery replication setup, and tabletop testing exercises. Full project management from planning through production cutover.</td>
                         </tr>
                         <tr>
-                            <td class="model-name">Test</td>
+                            <td class="model-name">
+                                <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                                    <span>Test</span>
+                                    <span class="grey-badge">Stay Ready</span>
+                                </div>
+                            </td>
                             <td class="duration-cell">1-2 weeks</td>
                             <td>Disaster recovery validation, failover testing, business continuity verification</td>
                             <td>Comprehensive testing services to validate your disaster recovery readiness. Includes tabletop exercises, failover simulations, recovery time objective (RTO) validation, and detailed reports with recommendations. Ensures your DR plan works when you need it most.</td>
                         </tr>
-                        <tr class="pricing-preferred">
+                        <tr>
                             <td class="model-name">
                                 Hourly Billable
-                                <span class="preferred-badge">Most Flexible</span>
+                                <span class="grey-badge">Most Flexible</span>
                             </td>
                             <td class="duration-cell">Flexible</td>
                             <td>Ongoing support, advisory services, flexible scope projects</td>
@@ -1631,4 +1678,29 @@
         }
 
         // Close modal with Escape key
-        document.addEventListener('keydown', fun
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && modal.style.display === 'block') {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Collapsible pricing row functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const fixedBidRow = document.getElementById('fixedBidRow');
+            const arrow = fixedBidRow.querySelector('.collapse-arrow');
+            const subRows = document.querySelectorAll('.sub-row[data-parent="fixedBidRow"]');
+
+            fixedBidRow.addEventListener('click', function() {
+                // Toggle arrow rotation
+                arrow.classList.toggle('expanded');
+
+                // Toggle sub-rows visibility
+                subRows.forEach(row => {
+                    row.classList.toggle('visible');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
