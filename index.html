@@ -1383,6 +1383,78 @@
                 font-size: 0.9rem !important;
             }
         }
+
+        /* Mobile responsive pricing table */
+        @media (max-width: 768px) {
+            .mobile-scroll-hint {
+                display: block !important;
+            }
+
+            .pricing-table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 0 -1rem;
+                padding: 0 1rem;
+            }
+
+            .pricing-table {
+                min-width: 800px;
+            }
+
+            .pricing-table th,
+            .pricing-table td {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .model-name {
+                font-size: 1rem;
+            }
+
+            .duration-cell {
+                font-size: 0.95rem;
+            }
+
+            .preferred-badge,
+            .grey-badge {
+                font-size: 0.65rem;
+                padding: 0.2rem 0.4rem;
+            }
+
+            .collapse-arrow {
+                font-size: 0.7rem;
+            }
+
+            .pricing-intro {
+                font-size: 0.95rem;
+                padding: 0 1rem;
+            }
+
+            .pricing-note {
+                font-size: 0.9rem;
+                padding: 0 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .pricing-table {
+                min-width: 700px;
+            }
+
+            .pricing-table th,
+            .pricing-table td {
+                padding: 0.75rem;
+                font-size: 0.85rem;
+            }
+
+            .model-name {
+                font-size: 0.95rem;
+            }
+
+            .duration-cell {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1510,6 +1582,7 @@
         <div class="section-content">
             <h2>Transparent, Predictable Engagement Models</h2>
             <p class="pricing-intro">No hidden fees, no scope creep surprises, no bait-and-switch rates. Choose the model that aligns with your risk tolerance and budget certainty requirements.</p>
+            <p style="text-align: center; color: #94a3b8; font-size: 0.9rem; margin-bottom: 1rem; display: none;" class="mobile-scroll-hint">👈 Swipe to see all options 👉</p>
             <div class="pricing-table-container">
                 <table class="pricing-table">
                     <thead>
