@@ -1480,7 +1480,7 @@
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="https://healaguard.com" class="nav-draas-button" target="_blank" rel="noopener noreferrer">DRaaS+</a>
+            <a href="#" class="nav-draas-button" id="navDRaaSBtn">Get the Playbook</a>
         </div>
     </nav>
 
@@ -1732,13 +1732,23 @@
         // Modal functionality
         const modal = document.getElementById('inquiryModal');
         const btn = document.getElementById('drInquireBtn');
+        const navBtn = document.getElementById('navDRaaSBtn');
         const span = document.getElementsByClassName('modal-close')[0];
 
-        // Open modal
+        // Open modal from floating button
         btn.onclick = function(e) {
             e.preventDefault();
             modal.style.display = 'block';
             document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        // Open modal from nav button
+        if (navBtn) {
+            navBtn.onclick = function(e) {
+                e.preventDefault();
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
         }
 
         // Close modal when clicking X
