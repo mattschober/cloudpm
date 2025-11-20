@@ -1,32 +1,52 @@
 # robots.txt for mattschober-cloudpm.com
 User-agent: *
 Allow: /
+Disallow: /scheduled
+Disallow: /scheduled.html
 Sitemap: https://mattschober-cloudpm.com/sitemap.xml
 
 # Allow all AI crawlers and search engines
 User-agent: GPTBot
 Allow: /
+Disallow: /scheduled
+Disallow: /scheduled.html
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /scheduled
+Disallow: /scheduled.html
 
 User-agent: CCBot
 Allow: /
+Disallow: /scheduled
+Disallow: /scheduled.html
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /scheduled
+Disallow: /scheduled.html
 
 User-agent: Claude-Web
 Allow: /
+Disallow: /scheduled
+Disallow: /scheduled.html
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /scheduled
+Disallow: /scheduled.html
 
 User-agent: Googlebot
 Allow: /
+Disallow: /scheduled
+Disallow: /scheduled.html
 
 User-agent: Bingbot
 Allow: /
+Disallow: /scheduled
+Disallow: /scheduled.html
 
 User-agent: Slurp
 Allow: /
+Disallow: /scheduled
+Disallow: /scheduled.html
