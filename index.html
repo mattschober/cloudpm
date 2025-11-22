@@ -770,6 +770,108 @@
             background-clip: text;
         }
 
+        /* Certifications Section */
+        .certifications {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 80px 20px;
+        }
+
+        .certifications h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #3b82f6 0%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+        }
+
+        .certifications-intro {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+            line-height: 1.8;
+        }
+
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .cert-badge {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cert-badge:hover {
+            transform: translateY(-10px);
+            border-color: rgba(249, 115, 22, 0.5);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.3);
+        }
+
+        .cert-badge img {
+            max-width: 100%;
+            height: auto;
+            max-height: 180px;
+            object-fit: contain;
+        }
+
+        @media (max-width: 768px) {
+            .certifications h2 {
+                font-size: 2.5rem;
+            }
+
+            .certifications-intro {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+
+            .certifications-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .cert-badge {
+                padding: 1rem;
+            }
+
+            .cert-badge img {
+                max-height: 140px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .certifications h2 {
+                font-size: 2rem;
+            }
+
+            .certifications-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .cert-badge {
+                padding: 0.75rem;
+            }
+
+            .cert-badge img {
+                max-height: 120px;
+            }
+        }
+
         /* Pricing Section */
         .pricing h2 {
             font-size: 3.5rem;
@@ -1478,6 +1580,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#certifications">Credentials</a></li>
                 <li><a href="#value">Value</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -1539,6 +1642,34 @@
                         <div style="background: #1e3a8a; color: #ffffff; padding: 1rem 2rem; border-radius: 10px; font-weight: bold; font-size: 1.5rem; margin-bottom: 1.5rem; display: inline-block;">Microsoft Azure Partner</div>
                         <p style="color: #cbd5e1; line-height: 1.6;">Seamless integration with Microsoft enterprise ecosystems and hybrid cloud excellence. Azure's enterprise-grade services, AI capabilities, and deep Windows/Office integration enable digital transformation. Partnership benefits include specialized technical resources and priority support for complex implementations.</p>
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="section-content">
+            <h2>Enterprise-Grade Credentials</h2>
+            <p class="certifications-intro">Validated expertise across cloud platforms and project management frameworks that Fortune 500 organizations require for vendor qualification.</p>
+            <div class="certifications-grid">
+                <div class="cert-badge">
+                    <img src="images/aws-foundational-ai.png" alt="AWS Certified AI Practitioner" />
+                </div>
+                <div class="cert-badge">
+                    <img src="images/aws-solutions-architect.png" alt="AWS Certified Solutions Architect" />
+                </div>
+                <div class="cert-badge">
+                    <img src="images/azure-fundamentals.png" alt="Microsoft Certified: Azure Fundamentals" />
+                </div>
+                <div class="cert-badge">
+                    <img src="images/pmi-acp.png" alt="PMI Agile Certified Practitioner" />
+                </div>
+                <div class="cert-badge">
+                    <img src="images/pmi-capm.png" alt="Certified Associate in Project Management" />
+                </div>
+                <div class="cert-badge">
+                    <img src="images/pmi-risk.png" alt="PMI Risk Management Professional" />
                 </div>
             </div>
         </div>
