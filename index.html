@@ -814,6 +814,7 @@
             border-radius: 15px;
             border: 1px solid rgba(59, 130, 246, 0.3);
             transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
         }
 
         .cert-badge:hover {
@@ -827,6 +828,33 @@
             height: auto;
             max-height: 180px;
             object-fit: contain;
+        }
+
+        .cert-badge.in-progress {
+            border-color: rgba(249, 115, 22, 0.5);
+            background: rgba(249, 115, 22, 0.05);
+        }
+
+        .cert-badge.in-progress::after {
+            content: 'In Progress';
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4);
+        }
+
+        .cert-badge.in-progress img {
+            opacity: 0.6;
+            filter: grayscale(30%);
         }
 
         @media (max-width: 768px) {
@@ -1659,7 +1687,7 @@
                 <div class="cert-badge">
                     <img src="images/aws-solutions-architect.png" alt="AWS Certified Solutions Architect" />
                 </div>
-                <div class="cert-badge">
+                <div class="cert-badge in-progress">
                     <img src="images/azure-fundamentals.png" alt="Microsoft Certified: Azure Fundamentals" />
                 </div>
                 <div class="cert-badge">
@@ -1668,7 +1696,7 @@
                 <div class="cert-badge">
                     <img src="images/pmi-capm.png" alt="Certified Associate in Project Management" />
                 </div>
-                <div class="cert-badge">
+                <div class="cert-badge in-progress">
                     <img src="images/pmi-risk.png" alt="PMI Risk Management Professional" />
                 </div>
             </div>
