@@ -857,6 +857,33 @@
             filter: grayscale(30%);
         }
 
+        .cert-badge.expired {
+            border-color: rgba(148, 163, 184, 0.5);
+            background: rgba(148, 163, 184, 0.05);
+        }
+
+        .cert-badge.expired::after {
+            content: 'Expired';
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #64748b 0%, #94a3b8 100%);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 12px rgba(100, 116, 139, 0.4);
+        }
+
+        .cert-badge.expired img {
+            opacity: 0.5;
+            filter: grayscale(60%);
+        }
+
         @media (max-width: 768px) {
             .certifications h2 {
                 font-size: 2.5rem;
@@ -1698,6 +1725,9 @@
                 </div>
                 <div class="cert-badge in-progress">
                     <img src="images/pmi-risk.png" alt="PMI Risk Management Professional" />
+                </div>
+                <div class="cert-badge expired">
+                    <img src="images/aws-sysops-admin.png" alt="AWS Certified SysOps Administrator" />
                 </div>
             </div>
         </div>
