@@ -1660,7 +1660,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <video id="heroVideo" class="hero-background-video" autoplay muted loop playsinline>
+        <video id="heroVideo" class="hero-background-video" muted playsinline>
             <source src="images/hero-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -1917,14 +1917,23 @@
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://js-na2.hsforms.net/forms/embed/244055979.js" defer></script>
 
     <script>
-        // Hero background video - ensure autoplay
+        // Hero background video - custom playback control
         window.addEventListener('DOMContentLoaded', function() {
             const heroVideo = document.getElementById('heroVideo');
 
             if (heroVideo) {
-                // Ensure video plays (muted for browser autoplay policies)
-                heroVideo.play().catch(function(error) {
-                    console.log('Video autoplay failed:', error);
+                // Wait 1 second, then play the video
+                setTimeout(function() {
+                    heroVideo.play().catch(function(error) {
+                        console.log('Video autoplay failed:', error);
+                    });
+                }, 1000);
+
+                // Listen for timeupdate to pause at 5 seconds
+                heroVideo.addEventListener('timeupdate', function() {
+                    if (heroVideo.currentTime >= 5) {
+                        heroVideo.pause();
+                    }
                 });
             }
         });
