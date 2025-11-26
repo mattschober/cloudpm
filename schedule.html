@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Consultation - Matt Schober</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Schedule a Consultation - Matt Schober Cloud PM">
+    <meta name="description" content="Schedule a consultation with Matt Schober to discuss your cloud migration, disaster recovery, or infrastructure modernization needs.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/consulting-logo-dark-compressed.jpg">
+    <link rel="shortcut icon" type="image/jpeg" href="images/consulting-logo-dark-compressed.jpg">
+    <link rel="apple-touch-icon" href="images/consulting-logo-dark-compressed.jpg">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mattschober-cloudpm.com/schedule.html">
+    <meta property="og:title" content="Schedule a Consultation - Matt Schober">
+    <meta property="og:description" content="Schedule a consultation to discuss your cloud infrastructure needs.">
+    <meta property="og:image" content="https://mattschober-cloudpm.com/images/social-share.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mattschober-cloudpm.com/schedule.html">
+    <meta property="twitter:title" content="Schedule a Consultation - Matt Schober">
+    <meta property="twitter:description" content="Schedule a consultation to discuss your cloud infrastructure needs.">
+    <meta property="twitter:image" content="https://mattschober-cloudpm.com/images/social-share.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mattschober-cloudpm.com/schedule.html">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YF9VXB9YLV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YF9VXB9YLV');
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(15, 23, 42, 0.95);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #3b82f6;
+        }
+
+        /* Main Content */
+        .schedule-container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .schedule-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+        }
+
+        .schedule-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .schedule-header p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Meeting Embed Container */
+        .meetings-wrapper {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            padding: 2rem;
+            min-height: 600px;
+        }
+
+        .meetings-iframe-container {
+            min-height: 600px;
+        }
+
+        /* Info Section */
+        .info-section {
+            max-width: 800px;
+            margin: 3rem auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .info-section h2 {
+            color: #0f172a;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .info-section li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: #475569;
+        }
+
+        .info-section li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a:hover {
+            color: #3b82f6;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: #3b82f6;
+            font-weight: 600;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .schedule-header h1 {
+                font-size: 2rem;
+            }
+
+            .schedule-header p {
+                font-size: 1rem;
+            }
+
+            .meetings-wrapper {
+                padding: 1rem;
+            }
+
+            .info-section {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .schedule-container {
+                padding: 0 1rem;
+            }
+
+            .schedule-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .meetings-wrapper {
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="https://mattschober-cloudpm.com" class="logo">
+                <img src="schober-consulting-logo-dark.png" alt="Matt Schober Logo">
+                <span class="logo-text">Matt Schober</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="https://mattschober-cloudpm.com">Home</a></li>
+                <li><a href="https://mattschober-cloudpm.com#about">About</a></li>
+                <li><a href="https://mattschober-cloudpm.com#services">Services</a></li>
+                <li><a href="https://mattschober-cloudpm.com#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="schedule-container">
+        <div class="schedule-header">
+            <h1>Schedule Your Consultation</h1>
+            <p>Let's discuss your cloud infrastructure needs and how I can help accelerate your digital transformation.</p>
+        </div>
+
+        <!-- HubSpot Meetings Embed -->
+        <div class="meetings-wrapper">
+            <!-- Start of Meetings Embed Script -->
+            <div class="meetings-iframe-container" data-src="https://meetings-na2.hubspot.com/matt-schober?embed=true"></div>
+            <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+            <!-- End of Meetings Embed Script -->
+        </div>
+
+        <!-- Information Section -->
+        <div class="info-section">
+            <h2>What to Expect</h2>
+            <ul>
+                <li>30-minute consultation to understand your cloud infrastructure needs</li>
+                <li>Discussion of your current challenges and future goals</li>
+                <li>Initial recommendations for your cloud strategy</li>
+                <li>Overview of how my services can support your objectives</li>
+                <li>No obligation - just a conversation about your needs</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Matt Schober</h3>
+                <p>Cloud Project Management Expert</p>
+                <p>AWS & Azure Partner Member</p>
+                <p>PMI Certified Project Manager</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="https://mattschober-cloudpm.com#services">Cloud Migration</a>
+                <a href="https://mattschober-cloudpm.com#services">Disaster Recovery</a>
+                <a href="https://mattschober-cloudpm.com#services">Infrastructure Modernization</a>
+                <a href="https://mattschober-cloudpm.com#services">Project Management</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:DR@migratewithmatt.com">DR@migratewithmatt.com</a></p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/mattschober" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://x.com/migratewithmatt" target="_blank" rel="noopener noreferrer">Twitter/X</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Matt Schober Cloud PM. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
