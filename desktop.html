@@ -1423,8 +1423,20 @@
             position: relative;
         }
 
-        .nav-spacer {
-            width: 150px;
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .nav-logo img {
+            height: 40px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-logo:hover img {
+            transform: scale(1.05);
         }
 
         nav ul {
@@ -1551,8 +1563,8 @@
                 gap: 1rem;
             }
 
-            .nav-spacer {
-                display: none;
+            .nav-logo img {
+                height: 35px;
             }
 
             nav ul {
@@ -1680,7 +1692,9 @@
 <body>
     <nav>
         <div class="nav-container">
-            <div class="nav-spacer"></div>
+            <a href="#home" class="nav-logo">
+                <img src="schober-consulting-logo-dark.png" alt="Matt Schober Consulting Logo">
+            </a>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
