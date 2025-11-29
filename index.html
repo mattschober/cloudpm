@@ -33,14 +33,53 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://mattschober-cloudpm.com/">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YF9VXB9YLV"></script>
-    <script>
+    <!-- Cookiebot Consent Management - FREE TIER -->
+    <!-- Sign up at https://www.cookiebot.com/en/try-for-free/ to get your domain group ID -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="YOUR-COOKIEBOT-ID-HERE" data-blockingmode="auto" type="text/javascript"></script>
+
+    <!-- Google tag (gtag.js) - Will be controlled by Cookiebot -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YF9VXB9YLV" data-cookieconsent="statistics"></script>
+    <script data-cookieconsent="statistics">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-YF9VXB9YLV');
+      gtag('config', 'G-YF9VXB9YLV', {
+        'anonymize_ip': true,
+        'cookie_flags': 'SameSite=None;Secure'
+      });
     </script>
+
+    <!-- Microsoft Clarity - FREE -->
+    <!-- Sign up at https://clarity.microsoft.com/ to get your project ID -->
+    <script type="text/javascript" data-cookieconsent="statistics">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "YOUR-CLARITY-ID-HERE");
+    </script>
+
+    <!-- LinkedIn Insight Tag -->
+    <!-- Sign up at https://www.linkedin.com/campaignmanager to get your Partner ID -->
+    <script type="text/javascript" data-cookieconsent="marketing">
+      _linkedin_partner_id = "YOUR-LINKEDIN-PARTNER-ID";
+      window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+      window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script>
+    <script type="text/javascript" data-cookieconsent="marketing">
+      (function(l) {
+        if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+        window.lintrk.q=[]}
+        var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);
+      })(window.lintrk);
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=YOUR-LINKEDIN-PARTNER-ID&fmt=gif" />
+    </noscript>
 
     <style>
         * {
